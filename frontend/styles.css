@@ -7,20 +7,69 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(to bottom, #000000, #1e3163); /* Initial gradient colors */
-    animation: moveGradient 10s linear infinite; /* Adjust the animation duration as needed */
- }
- 
- @keyframes moveGradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 0% 100%;
-    }
- }
- 
- h1 {
-    color: #ffffff; /* Set text color to white for better visibility on a dark background */
- }
- 
+    background: linear-gradient(to bottom, #000000, #1e3163);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.star {
+    position: absolute;
+    background-image: url('https://i.postimg.cc/YCGDp2Yn/kisspng-pole-star-tattoo-clip-art-light-star-cliparts-5a8671ae2699f3-4272442815187603661581.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 10px; 
+    height: 10px; 
+    opacity: 0.5;
+  
+    animation: twinkling 5s infinite ease-in-out;
+  }
+  
+  @keyframes twinkling {
+    0%, 100% { opacity: 0.2; }
+    25% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+    75% { opacity: 0.4; }
+  }
+  
+
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+
+
+  .button {
+    display: inline-block;
+    padding: 25px 200px;
+    text-decoration: none;
+    margin: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #535353;
+    border-radius: 100px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #2a2a28;
+    color: #ffffff;
+}
+
+.welcome-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #c8cdf0;
+}
+
+h1 {
+    color: #ffffff;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alcoholic Drinks - Starlight Saloon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Find Your Perfect Cocktail</h1>
+
+  <!-- Preference Selection -->
+  <section class="preference-selection">
+    <h2>Tell us what you like</h2>
+    <form id="preference-form">
+      <label for="sweet">Sweet
+        <input type="checkbox" id="sweet" name="flavor" value="sweet">
+      </label>
+      <label for="sour">Sour
+        <input type="checkbox" id="sour" name="flavor" value="sour">
+      </label>
+      <label for="fruity">Fruity
+        <input type="checkbox" id="fruity" name="flavor" value="fruity">
+      </label>
+      <label for="strong">Strong
+        <input type="checkbox" id="strong" name="flavor" value="strong">
+      </label>
+      <button type="submit">Find Cocktails</button>
+    </form>
+  </section>
+
+  <!-- Recipe Display -->
+  <section class="recipe-display">
+    <h2>Your Cocktail Suggestions</h2>
+    <div id="recipes">
+      <!-- Recipes will be populated here based on the user's preference -->
+    </div>
+  </section>
+
+  <!-- Garnish Ideas -->
+  <section class="garnish-ideas">
+    <h2>Garnish Your Drink</h2>
+    <div class="garnish-list">
+      <!-- Visual representations of garnishes will go here -->
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
